@@ -1,3 +1,36 @@
 
 @import '~bootstrap/scss/bootstrap';
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 0;
+}
+
+header {
+    .navbar {
+        justify-content: flex-start;
+
+        img {
+            width: 150px;
+        }
+        .oc-nav {
+            float: right!important;
+            margin-bottom: 0;
+            
+            li {
+                display: inline-block;
+                margin: 0 1rem;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@import 'home'

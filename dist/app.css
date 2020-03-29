@@ -10880,3 +10880,34 @@ a.text-dark:focus {
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 0;
+}
+
+header .navbar {
+  justify-content: flex-start;
+}
+
+header .navbar img {
+  width: 150px;
+}
+
+header .navbar .oc-nav {
+  float: right !important;
+  margin-bottom: 0;
+}
+
+header .navbar .oc-nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+header .navbar .oc-nav li a {
+  text-decoration: none;
+}
+

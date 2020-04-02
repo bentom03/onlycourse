@@ -1,5 +1,10 @@
-
 @import '~bootstrap/scss/bootstrap';
+
+$primary-color: #CB2127;
+$secondary-color: #7F030C;
+$accent-color: #1178F2;
+$accent-secondary: #042370;
+$copy-color: #534141;
 
 * {
     box-sizing: border-box;
@@ -8,29 +13,147 @@
 body {
     margin: 0;
     padding-top: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+h1 {
+    font-size: 10vw;
+}
+
+h2 {
+    font-size: 8vw;
+}
+
+h3 {
+    font-size: 6vw;
+}
+
+h4 {
+    font-size: 4vw;
+}
+
+h5 {
+    font-size: 3vw;
+}
+
+h6 {
+    font-size: 1.5vw;
+}
+
+p {
+    font-size: 16px;
+}
+
+.btn {
+    outline: none;
+}
+
+.btn-accent {
+    background-color: $accent-color;
+    color: white;
+    padding: 0.3rem 1.5rem;
+
+    &:hover {
+        background-color: $accent-secondary;
+        color: white;
+    }
+}
+
+.btn-outline-red {
+    border-color: $primary-color;
+    padding: 0.3rem 1.5rem;
+    color: $primary-color;
+
+    &:hover {
+        background-color: $primary-color;
+        color: white;
+    }
+}
+
+.section-btn {
+    margin: 3rem auto;
+    display: block;
+    width: 200px;
+}
+
+.btn-outline-white {
+    border-color: white;
+    color: white;
+    padding: 0.3rem 1.5rem;
+
+    &:hover,
+    &:active {  
+        background-color: white !important;
+        color: $secondary-color;
+    }
 }
 
 header {
-    .navbar {
-        justify-content: flex-start;
+    .header-bar {
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+        position: relative;
+        z-index: 100;
 
-        img {
-            width: 150px;
+        .navbar {
+            justify-content: flex-start;
+
+            img {
+                width: 150px;
+            }
+
+            .oc-menu-btn {
+                border: none;
+
+                span {
+                    display: block;
+                    background-color: $primary-color;
+                    width: 2rem;
+                    height: .12rem;
+                    margin: .5rem 0;
+                }
+
+            }
+
+            .oc-menu {
+                position: absolute;
+                z-index: -1;
+                height: 100vh;
+                top: 0rem;
+                left: 0rem;
+                padding: 5rem 1rem;
+                width: 100vw;
+                font-size: 1.5vw;
+
+                .nav-item {
+                    .nav-link {
+                        color: $primary-color;
+                    }
+                }
+
+                .active {
+                    .nav-link {
+                        color: $secondary-color;
+                    }
+                }
+            }
         }
+
         .oc-nav {
-            float: right!important;
             margin-bottom: 0;
-            
+
             li {
                 display: inline-block;
-                margin: 0 1rem;
+                margin: 0 1.5rem;
 
                 a {
                     text-decoration: none;
+                    color: white;
                 }
             }
         }
     }
 }
 
-@import 'home'
+@import 'home';

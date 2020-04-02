@@ -9,54 +9,159 @@
     <link rel="canonical" href="https://www.onlycourse.com/">
     <link rel="stylesheet" href="dist/app.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:300,400&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar sticky-top navbar-light bg-white">
-            <a class="navbar-brand">
-                <img src="assets/oc-logo.svg" alt="Only Course Logo" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
 
+    <header>
+        <div class="header-bar d-flex container">
+            <nav class="navbar sticky-top navbar-light bg-transparent">
+                <a class="navbar-brand">
+                    <img src="assets/oc-logo.svg" alt="Only Course Logo." />
+                </a>
+                <button class="navbar-toggler oc-menu-btn" type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse oc-menu" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Paths</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Terms of Usage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <ul class="oc-nav">
                 <li><a href="#">Login</a></li>
-                <li><a href="#" class="btn btn-primary">Sign Up</a></li>
+                <li><a href="#" class="btn btn-accent">Sign Up</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
-    <div class="container-fluid">
+    <main>
+        <section id="hero">
+            <div class="container-fluid p-0 m-0 position-relative">
+                <img src="assets/oc-bg-light.svg" alt="" class="dsgn-ele-lg-light">
+                <img src="assets/oc-bg-medium.svg" alt="" class="dsgn-ele-lg-med">
+                <img src="assets/oc-bg-dark.svg" alt="" class="dsgn-ele-lg-dark">
+                <div class="banner">
+                    <img src="assets/banner-illustration.svg"
+                        alt="Students sitting on Books and Computers, studying Illustration." class="web-img">
+                    <div class="banner-content">
+                        <h4>Learn Anywhere</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-outline-white">Enroll for Free</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </div>
+        <section id="courses">
+            <div class="container">
+                <h5>Courses</h5>
+                <div class="card-wrapper">
+                    <div class="card-box clearfix">
+                        <img src="assets/react-logo.png" alt="React JS Logo">
+                        <img src="assets/oc-icon.svg" alt="" class="icon-divider">
+                        <div class="card-content">
+                            <h6>React JS</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <a href="#" class="btn btn-outline-white card-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="card-box clearfix">
+                        <img src="assets/react-logo.png" alt="React JS Logo">
+                        <img src="assets/oc-icon.svg" alt="" class="icon-divider">
+                        <div class="card-content">
+                            <h6>React JS</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <a href="#" class="btn btn-outline-white card-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="card-box clearfix">
+                        <img src="assets/react-logo.png" alt="React JS Logo">
+                        <img src="assets/oc-icon.svg" alt="" class="icon-divider">
+                        <div class="card-content">
+                            <h6>React JS</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <a href="#" class="btn btn-outline-white card-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline-red section-btn">Check all Courses</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container position-relative">
+                <img src="assets/oc-icon-white.svg" alt="" class="hidden-icon">
+                <div class="about-wrapper">
+                    <div class="about-content">
+                        <h5>The best way to learn</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                            maecenas
+                            accumsan lacus vel facilisis. </p>
+                        <a href="#" class="btn btn-outline-white">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="paths">
+            <div class="container position-relative mt-5">
+                <h5>Paths</h5>
+                <div class="card-wrapper">
+                    <div class="card-box clearfix">
+                        <img src="assets/frontend-dev.svg" alt="Front-end development illustration." class="path-icon">
+                        <img src="assets/oc-icon.svg" alt="" class="icon-divider">
+                        <div class="card-content">
+                            <h6>React JS</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <a href="#" class="btn btn-outline-white card-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="card-box clearfix">
+                        <img src="assets/mobile-dev.svg" alt="Mobile development illustration." class="path-icon">
+                        <img src="assets/oc-icon.svg" alt="" class="icon-divider">
+                        <div class="card-content">
+                            <h6>React JS</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <a href="#" class="btn btn-outline-white card-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline-red section-btn">Check all Paths</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="dist/app.js"></script>
 </body>
 
 </html>

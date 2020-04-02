@@ -10887,27 +10887,308 @@ a.text-dark:focus {
 body {
   margin: 0;
   padding-top: 0;
+  font-family: 'Barlow', sans-serif;
 }
 
-header .navbar {
+h1 {
+  font-size: 10vw;
+}
+
+h2 {
+  font-size: 8vw;
+}
+
+h3 {
+  font-size: 6vw;
+}
+
+h4 {
+  font-size: 4vw;
+}
+
+h5 {
+  font-size: 3vw;
+}
+
+h6 {
+  font-size: 1.5vw;
+}
+
+p {
+  font-size: 16px;
+}
+
+.btn {
+  outline: none;
+}
+
+.btn-accent {
+  background-color: #1178F2;
+  color: white;
+  padding: 0.3rem 1.5rem;
+}
+
+.btn-accent:hover {
+  background-color: #042370;
+  color: white;
+}
+
+.btn-outline-red {
+  border-color: #CB2127;
+  padding: 0.3rem 1.5rem;
+  color: #CB2127;
+}
+
+.btn-outline-red:hover {
+  background-color: #CB2127;
+  color: white;
+}
+
+.section-btn {
+  margin: 3rem auto;
+  display: block;
+  width: 200px;
+}
+
+.btn-outline-white {
+  border-color: white;
+  color: white;
+  padding: 0.3rem 1.5rem;
+}
+
+.btn-outline-white:hover,
+.btn-outline-white:active {
+  background-color: white !important;
+  color: #7F030C;
+}
+
+header .header-bar {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  position: relative;
+  z-index: 100;
+}
+
+header .header-bar .navbar {
   justify-content: flex-start;
 }
 
-header .navbar img {
+header .header-bar .navbar img {
   width: 150px;
 }
 
-header .navbar .oc-nav {
-  float: right !important;
+header .header-bar .navbar .oc-menu-btn {
+  border: none;
+}
+
+header .header-bar .navbar .oc-menu-btn span {
+  display: block;
+  background-color: #CB2127;
+  width: 2rem;
+  height: .12rem;
+  margin: .5rem 0;
+}
+
+header .header-bar .navbar .oc-menu {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  top: 0rem;
+  left: 0rem;
+  padding: 5rem 1rem;
+  width: 100vw;
+  font-size: 1.5vw;
+}
+
+header .header-bar .navbar .oc-menu .nav-item .nav-link {
+  color: #CB2127;
+}
+
+header .header-bar .navbar .oc-menu .active .nav-link {
+  color: #7F030C;
+}
+
+header .header-bar .oc-nav {
   margin-bottom: 0;
 }
 
-header .navbar .oc-nav li {
+header .header-bar .oc-nav li {
   display: inline-block;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
 }
 
-header .navbar .oc-nav li a {
+header .header-bar .oc-nav li a {
   text-decoration: none;
+  color: white;
+}
+
+.dsgn-ele-lg-light,
+.dsgn-ele-lg-med,
+.dsgn-ele-lg-dark {
+  height: 140vh;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.dsgn-ele-lg-light {
+  top: -5rem;
+  left: 0;
+  z-index: -1;
+}
+
+.dsgn-ele-lg-med {
+  top: -5rem;
+  left: -3rem;
+  z-index: -2;
+}
+
+.dsgn-ele-lg-dark {
+  top: -5rem;
+  left: -6rem;
+  z-index: -3;
+}
+
+.banner {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100vh;
+  overflow: visible;
+}
+
+.banner .web-img {
+  width: 40%;
+  position: absolute;
+  left: 5rem;
+  z-index: 2;
+}
+
+.banner::after {
+  content: " ";
+  display: block;
+  background-color: #CB2127;
+  height: 140vh;
+  position: absolute;
+  right: 0;
+  top: -5rem;
+  width: 28rem;
+  z-index: inherit;
+}
+
+.banner .banner-content {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translate3d(0, calc(-50% - 2rem), 0);
+  color: white;
+  width: 30%;
+  text-align: right;
+  z-index: 10;
+}
+
+#courses {
+  color: white;
+  margin-top: 0rem;
+}
+
+#courses h5 {
+  text-align: center;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.card-wrapper .card-box {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 400px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  margin: 0 1rem;
+  z-index: 5;
+}
+
+.card-wrapper .card-box img {
+  width: 25%;
+  float: left;
+  margin: 2rem 1rem;
+}
+
+.card-wrapper .card-box .card-content {
+  background-color: #7F030C;
+  color: white;
+  height: 100%;
+  width: 58%;
+  margin-left: 1rem;
+  padding: 1rem 1.5rem 1rem 0;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  z-index: inherit;
+}
+
+.card-wrapper .card-box .card-content p {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.card-wrapper .card-box .card-content .card-btn {
+  font-size: 12px;
+}
+
+.card-wrapper .card-box .icon-divider {
+  height: 140% !important;
+  width: auto;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(calc(-50% - 2.5rem));
+  margin: 0;
+  z-index: 0;
+}
+
+.hidden-icon {
+  position: absolute;
+}
+
+.about-wrapper {
+  background-color: #7F030C;
+  padding: 1rem;
+  height: 300px;
+  color: white;
+  text-align: center;
+  width: 90%;
+  margin-left: 3rem;
+}
+
+.about-wrapper .about-content {
+  width: 60%;
+  margin: auto;
+}
+
+#paths .card-box {
+  width: 500px;
+}
+
+#paths .card-box .path-icon {
+  margin: 1rem 1.5rem;
+}
+
+#paths .card-box .icon-divider {
+  transform: translateX(calc(-50% - 3.5rem));
+  top: -1.8rem;
+}
+
+#paths h5 {
+  text-align: center;
+  color: #CB2127;
 }
 

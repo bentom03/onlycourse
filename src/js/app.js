@@ -7,4 +7,6 @@ try {
     window.$ = window.jQuery = require('jquery');
     require('bootstrap');
 
+    require('./modal');
+
 } catch (e) {}

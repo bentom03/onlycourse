@@ -1,0 +1,90 @@
+.modal-content {
+    width: 75%;
+    border-radius: 10px;
+    margin-left: 3rem;
+
+    p {
+        font-size: .85rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        color: #666;
+    }
+
+    .modal-header {
+        flex-direction: column;
+        align-items: center;
+        background-color: $primary-color;
+        color: white;
+        padding: .5rem 2.5rem;
+        text-align: center;
+
+        p {
+            color: white;
+            opacity: .7;
+        }
+
+        h5 {
+            text-transform: uppercase;
+            font-size: 2vw;
+        }
+
+        .close {
+            position: absolute;
+            top: -1rem;
+            right: -3rem;
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #fff;
+            text-shadow: none;
+        }
+    }
+
+    .modal-body {
+        padding: 1rem 2.5rem;
+
+        .btn {
+            width: 100% !important;
+            padding: .5rem;
+        }
+    }
+
+    hr {
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+        width: 50%;
+        margin-top: 1rem;
+    }
+
+    .overlap-text {
+        background-color: white;
+        padding: .5rem 1rem;
+        margin: -2.2rem auto;
+    }
+
+    .social-logins  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem auto 1rem;
+        width: 60%;
+        
+        .social-box {
+            color: white;
+            padding: 1rem 1.5rem;
+            margin: auto;
+            text-align: center;
+        }
+        .google {
+            background-color: #db3236;
+        }
+        .fb {
+            background-color: #3b5998;
+        }
+        .twitter {
+            background-color: #00acee;
+        }
+    }
+
+    .modal-footer {
+        justify-content: center;
+    }
+}

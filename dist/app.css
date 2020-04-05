@@ -11407,3 +11407,97 @@ footer .curved-bg {
   z-index: -1;
 }
 
+.modal-content {
+  width: 75%;
+  border-radius: 10px;
+  margin-left: 3rem;
+}
+
+.modal-content p {
+  font-size: .85rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #666;
+}
+
+.modal-content .modal-header {
+  flex-direction: column;
+  align-items: center;
+  background-color: #ab010e;
+  color: white;
+  padding: .5rem 2.5rem;
+  text-align: center;
+}
+
+.modal-content .modal-header p {
+  color: white;
+  opacity: .7;
+}
+
+.modal-content .modal-header h5 {
+  text-transform: uppercase;
+  font-size: 2vw;
+}
+
+.modal-content .modal-header .close {
+  position: absolute;
+  top: -1rem;
+  right: -3rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: none;
+}
+
+.modal-content .modal-body {
+  padding: 1rem 2.5rem;
+}
+
+.modal-content .modal-body .btn {
+  width: 100% !important;
+  padding: .5rem;
+}
+
+.modal-content hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.modal-content .overlap-text {
+  background-color: white;
+  padding: .5rem 1rem;
+  margin: -2.2rem auto;
+}
+
+.modal-content .social-logins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto 1rem;
+  width: 60%;
+}
+
+.modal-content .social-logins .social-box {
+  color: white;
+  padding: 1rem 1.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+.modal-content .social-logins .google {
+  background-color: #db3236;
+}
+
+.modal-content .social-logins .fb {
+  background-color: #3b5998;
+}
+
+.modal-content .social-logins .twitter {
+  background-color: #00acee;
+}
+
+.modal-content .modal-footer {
+  justify-content: center;
+}
+

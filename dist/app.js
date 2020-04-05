@@ -17947,7 +17947,34 @@ try {
   window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
   __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
+
+  __webpack_require__(/*! ./modal */ "./src/js/modal.js");
 } catch (e) {}
+
+/***/ }),
+
+/***/ "./src/js/modal.js":
+/*!*************************!*\
+  !*** ./src/js/modal.js ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  toggleModal();
+  console.log("Modals are here");
+});
+
+function toggleModal() {
+  $('#signUp').click(function () {
+    $('#login').removeClass('show');
+    $('#sign-up').addClass('show');
+  });
+  $('#logIn').click(function () {
+    $('#sign-up').removeClass('show');
+    $('#login').addClass('show');
+  });
+}
 
 /***/ }),
 
